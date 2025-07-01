@@ -1,0 +1,115 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);   
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+     
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/download.png');
+    
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 5vh;
+}
+
+.filme-principal .container {
+    margin-left: 40px; 
+    max-width: 60%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.filme-principal .titulo{
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+.fcc-btn {
+    background-color: rgba(100, 100, 100, 0.5);
+    border: none;
+    color: white;
+    text-decoration: none;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.fcc-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.fcc-btn i{
+    margin-right: 8px;
+}
+
+.carrosel-filmes{
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.box-filme:hover {
+    transform: scale(1.05);
+}
